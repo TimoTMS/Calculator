@@ -1,0 +1,50 @@
+.root {
+    -fx-background-color: #d4e7ea;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Textfeld oben (Display) */
+.text-field {
+    -fx-font-size: 24px;
+    -fx-background-color: #d4e7ea;
+    -fx-text-fill: #00738c;
+    -fx-alignment: center-right;
+    -fx-padding: 10;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #00738c;
+}
+
+/* Standard-Tasten */
+.button {
+    -fx-padding: 15px 15px;
+    -fx-font-size: 18px;
+    -fx-background-color: #81b0b2;
+    -fx-text-fill: white;
+    -fx-background-radius: 10px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+/* Operator-Tasten */
+.button.operator {
+    -fx-background-color: #00738c;
+}
+
+/* Ergebnis-Taste (=) */
+.button.equals {
+    -fx-background-color: #4e705a;
+}
+
+/* Reset-Taste (C) */
+.button.clear {
+    -fx-background-color: #4e705a;
+}
+
+
+/* Colors
+#00738c
+#81b0b2
+#d6ead4
+#eff2d8
+#97a675 */
