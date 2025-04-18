@@ -2,6 +2,17 @@
     -fx-background-color: #d4e7ea;
     -fx-font-family: "Segoe UI", sans-serif;
 }
+.anchor-pane {
+    -fx-background-color: #d4e7ea;
+    -fx-pref-height: 450px;
+    -fx-pref-width: 400px;
+    -fx-min-height: 450px;
+    -fx-min-width: 400px;
+    -fx-max-height: 450px;
+    -fx-max-width: 400px;
+    -fx-border-color: #00738c;
+
+}
 
 /* Textfeld oben (Display) */
 .text-field {
@@ -13,11 +24,18 @@
     -fx-background-radius: 8;
     -fx-border-radius: 8;
     -fx-border-color: #00738c;
+    -fx-end-margin: 10px;
+    -fx-start-margin: 10px;
+    -fx-mar
 }
 
 /* Standard-Tasten */
 .button {
-    -fx-padding: 15px 15px;
+    -fx-start-margin: 10px 10px 10px 10px;
+    -fx-end-margin: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 50px;
     -fx-font-size: 18px;
     -fx-background-color: #81b0b2;
     -fx-text-fill: white;
@@ -33,7 +51,7 @@
 
 /* Ergebnis-Taste (=) */
 .button.equals {
-    -fx-background-color: #4e705a;
+    -fx-background-color: #5c999c;
 }
 
 /* Reset-Taste (C) */
@@ -47,4 +65,10 @@
 #81b0b2
 #d6ead4
 #eff2d8
-#97a675 */
+#97a675
+#b4d7c5	Pastellgrün
+#a4cbb8	Blassgrün
+#f0f5e4	Sehr helles Pastellgrün
+#8ca68c	Grau-grün
+#b7c8b5	Sanftes Salbei
+*/

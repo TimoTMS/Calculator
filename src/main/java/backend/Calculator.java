@@ -22,4 +22,17 @@ public class Calculator {
         }
         return a % b;
     }
+    public double faculty(double a) {
+        if (a < 0) {
+            throw new IllegalArgumentException("Negative number");
+        }
+        double result = 1;
+        for (int i = 1; i <= a; i++) {
+            result *= i;
+        }
+        return result;
+    }
+    public double power(double a, double b) {
+        return Math.pow(a, b);
+    }
 }
