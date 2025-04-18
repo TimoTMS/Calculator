@@ -1,5 +1,8 @@
 package main.java.backend;
 
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+
 public class Calculator {
     public double add(double a, double b) {
         return a + b;
@@ -34,5 +37,16 @@ public class Calculator {
     }
     public double power(double a, double b) {
         return Math.pow(a, b);
+    }
+
+    public double calculateExpression(String expression) {
+        try {
+            ScriptEngineManager mgr = new ScriptEngineManager();
+            ScriptEngine engine = mgr.getEngineByName("JavaScript");
+            Object result = engine.eval(expression);
+            return Double.parseDouble(result.toString());
+        } catch (Exception e) {
+            throw new IllegalArgumentException("Ungültiger Ausdruck: " + expression);
+        }
     }
 }

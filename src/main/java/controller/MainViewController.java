@@ -14,15 +14,13 @@ public class MainViewController{
 
     private Calculator calculator = new Calculator();
 
-    private String currentInput = "";
-    private double firstOperand = 0;
-    private String currentOperator = "";
+    private final Calculator calculator = new Calculator();
     private boolean startNewInput = true;
 
     @FXML
     private void initialize() {
         // Initialize the calculator
-        displayField.setText("0");
+        displayField.setEditable(false);
     }
 
     @FXML
@@ -110,6 +108,9 @@ public class MainViewController{
             displayField.setText(currentInput);
         }
     }
+
+    @FXML
+
     @FXML
     private Button addButton;
 
